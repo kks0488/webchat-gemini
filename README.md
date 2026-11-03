@@ -18,7 +18,7 @@
 
 <p align="center">
   Two small Python scripts that drive the Chrome window you are already using.<br>
-  Hand a prompt file to Gemini, wait for the full answer, save it as Markdown.
+  Hand a prompt file to Gemini, wait for the answer, save the visible text as-is.
 </p>
 
 <table>
@@ -46,7 +46,7 @@ Runs inside your normal Chrome profile, so your Gemini plan, model picker and hi
 <td width="50%" valign="top">
 
 ### Built for pipelines
-Read the prompt from a file or stdin, write the answer to a file, exit non-zero on failure. Optional `--require-mode` guard stops if the wrong model is selected.
+Read the prompt from a file or stdin, write the answer to a file (saving partial text and exiting 0 on timeout), exit non-zero on other failures. Optional `--require-mode` guard stops if the wrong model is selected.
 
 </td>
 </tr>
